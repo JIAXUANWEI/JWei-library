@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.form {
+    text-align: center;
+    margin: 50px auto 0 auto;
+    /* 上边距50px，左右自动居中 */
+    width: 1250px;
+}
+
+/* ID 选择器 */
+#username:focus,
+#password:focus,
+#isAustralian:focus,
+#reason:focus {
+    border-color: #FF0000;
+    background-color: #556B2F;
+    outline: none;
+        /* 关掉默认外圈 */
+    box-shadow: none !important;
+    /* The browser/framework adds an outline or box-shadow ("out-glowing") to the focus state of the form control,
+        not a border. You only changed the border-color,
+        and the black outline/box-shadow on the outside is still there,
+        so visually it's still a black border */
+}

@@ -133,6 +133,7 @@
 </template>
 
 <script setup>
+
 import { ref, computed } from "vue"
 
 // Activity 1: Import JSON files (authors.json and bookstores.json)
