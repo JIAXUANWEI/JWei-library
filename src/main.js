@@ -6,5 +6,21 @@ import App from './App.vue'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-createApp(App).mount('#app')
+
+import primeVue from 'primevue/config';
+import Aura from '@primevue/themes/aura';
+import DataTable from 'primevue/datatable'
+import Column from 'primevue/column'
+import { Theme } from '@primevue/themes';
+
+const app = createApp(App);
+app.use(primeVue, {
+    theme: {
+        preset: Aura
+    }
+});
+app.component('DataTable', DataTable)
+app.component('Column', Column)
+
+app.mount('#app')
     
